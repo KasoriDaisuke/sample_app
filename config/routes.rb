@@ -1,13 +1,9 @@
 SampleApp::Application.routes.draw do
-<<<<<<< HEAD
-  get "users/show"
-=======
   
   devise_for  :users
   resources :users, only: [:show]
   root  'static_pages#home'
-  
->>>>>>> 579d57abdfc18b61cbbfe35b1d917d44fc4e3617
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
